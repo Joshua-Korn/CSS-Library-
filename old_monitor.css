@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Pipboy;
+    src: url('../monofonto\ rg.otf');
+}
+
+body {
+    font-family: Pipboy, sans-serif;
+    color: #14fe17;
+    background: #272b23;
+}
+
+body::after {
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.4) 1px, transparent 1px, transparent 2px);
+    opacity: .3;
+    z-index: 1000000;
+    pointer-events: none;
+}
